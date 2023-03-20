@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 
  
 
-export   function MyPopover({children}) {
+export   function MyPopover({children}:{children:any}) {
   return (
     <div className="  w-full max-w-sm px-4 ">
       <Popover className="relative">

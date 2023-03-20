@@ -83,6 +83,7 @@ const VerifyPhoneOtp = ({
   };
 
   let imgSrc = "/assets/img/phone.png";
+  const mobileCurrentUser = useCurrentUser()?.user?.mobile
   let caption: React.ReactNode = (
     <>
       Didn&apos;t get the code?{" "}
@@ -94,7 +95,7 @@ const VerifyPhoneOtp = ({
   let content = (
     <>
       <p className="text-sm text-gray-dark mb-4">
-        We have sent you a verification code to your phone number {requestData?.mobile || useCurrentUser()?.user?.mobile}
+        We have sent you a verification code to your phone number {requestData?.mobile || mobileCurrentUser}
       </p>
       <VerifyMobileForm onVerify={onVerify} />
     </>

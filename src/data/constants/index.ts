@@ -21,8 +21,9 @@ export const API_SERVICES_URLS = {
     ADD_BANK: "/bank/add",
     REQUEST_CASH_WITHDRAW: "/withdraw/request-cash",
     REQUEST_BANK_WITHDRAW: "/withdraw/request-bank",
+    LAST_WITHDRAW: "/withdraw/last-request",
     
-
+    
     
     EDIT_RECIPIENT: (id: string) => `/recipient/edit/${id}`,
     EDIT_BANK: (id: string) => `/bank/edit/${id}`,
